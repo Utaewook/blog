@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on tw's blog</title><link>https://Utaewook.github.io/blog/page/</link><description>Recent content in Pages on tw's blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sun, 14 Dec 2025 15:55:36 +0900</lastBuildDate><atom:link href="https://Utaewook.github.io/blog/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://Utaewook.github.io/blog/page/about/</link><pubDate>Sun, 14 Dec 2025 15:55:36 +0900</pubDate><guid>https://Utaewook.github.io/blog/page/about/</guid><description>&lt;h1 id="focus"&gt;Focus
-&lt;/h1&gt;&lt;p&gt;(내가 현재 관심있어하는 분야)
-선형대수
-docker
-리눅스 환경
-데이터 전처리 파이프라이닝&lt;/p&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;관심 분야 작성&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id="role"&gt;Role
-&lt;/h1&gt;&lt;p&gt;모델 개발 및 전처리 파이프라인 구축
-시계열 센서 데이터를 통한 열화 혹은 고장 진단&lt;/p&gt;
-&lt;p&gt;AI/ML Engineer, 데이터 전처리, 모델 구축 및 평가, 비지도학습 기반 이상탐지
-시계열, 이미지 데이터&lt;/p&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;업무 및 직무, 프로젝트에서의 역할 작성&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id="project"&gt;Project
-&lt;/h1&gt;&lt;h2 id="환편기-이상탐지-모델-구축-및-평가"&gt;환편기 이상탐지 모델 구축 및 평가
+&lt;/h1&gt;&lt;h2 id="프로젝트-1"&gt;프로젝트 1
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;프로젝트 설명(2~4줄 정도로 간단히)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="emu150-cbm-데이터-전처리-및-이상탐지-모델-구축"&gt;EMU150 CBM 데이터 전처리 및 이상탐지 모델 구축
+&lt;h2 id="프로젝트-2"&gt;프로젝트 2
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;프로젝트 설명(2~4줄 정도로 간단히)&lt;/li&gt;
 &lt;/ul&gt;
@@ -25,7 +22,8 @@ docker
 &lt;li&gt;docker&lt;/li&gt;
 &lt;li&gt;linux (Ubuntu)&lt;/li&gt;
 &lt;li&gt;git&lt;/li&gt;
-&lt;li&gt;OracleDB&lt;/li&gt;
+&lt;li&gt;OracleDB
+&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="experience"&gt;Experience
 &lt;/h1&gt;&lt;ul&gt;
