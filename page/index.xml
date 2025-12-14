@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on tw's blog</title><link>https://Utaewook.github.io/blog/page/</link><description>Recent content in Pages on tw's blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sun, 14 Dec 2025 15:55:36 +0900</lastBuildDate><atom:link href="https://Utaewook.github.io/blog/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://Utaewook.github.io/blog/page/about/</link><pubDate>Sun, 14 Dec 2025 15:55:36 +0900</pubDate><guid>https://Utaewook.github.io/blog/page/about/</guid><description>&lt;hr&gt;
+&lt;h1 id="focus"&gt;Focus
+&lt;/h1&gt;&lt;p&gt;(내가 현재 관심있어하는 분야)
+선형대수
+docker
+리눅스 환경
+데이터 전처리 파이프라이닝&lt;/p&gt;
+&lt;h1 id="role"&gt;Role
+&lt;/h1&gt;&lt;p&gt;모델 개발 및 전처리 파이프라인 구축
+시계열 센서 데이터를 통한 열화 혹은 고장 진단&lt;/p&gt;
+&lt;p&gt;AI/ML Engineer, 데이터 전처리, 모델 구축 및 평가, 비지도학습 기반 이상탐지
+시계열, 이미지 데이터&lt;/p&gt;
+&lt;h1 id="project"&gt;Project
+&lt;/h1&gt;&lt;h2 id="환편기-이상탐지-모델-구축-및-평가"&gt;환편기 이상탐지 모델 구축 및 평가
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;프로젝트 설명(2~4줄 정도로 간단히)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="emu150-cbm-데이터-전처리-및-이상탐지-모델-구축"&gt;EMU150 CBM 데이터 전처리 및 이상탐지 모델 구축
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;프로젝트 설명(2~4줄 정도로 간단히)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="skill"&gt;Skill
+&lt;/h1&gt;&lt;p&gt;(주요 기술 : 숙련도 형태로 표현)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;python&lt;/li&gt;
+&lt;li&gt;docker&lt;/li&gt;
+&lt;li&gt;linux (Ubuntu)&lt;/li&gt;
+&lt;li&gt;git&lt;/li&gt;
+&lt;li&gt;OracleDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="experience"&gt;Experience
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;경력 및 경험사항 요약 (교육, 인턴, 현 직장)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="education"&gt;Education
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;전공, 학위, 연도&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="about"&gt;About
+&lt;/h1&gt;&lt;p&gt;(일하는 방식, 문제를 바라보는 관점, 주제들에 대한 생각 등 정리)&lt;/p&gt;
+&lt;h1 id="contact"&gt;Contact
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;email: &lt;a class="link" href="mailto:ddd050427@gmail.com" &gt;ddd050427@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
