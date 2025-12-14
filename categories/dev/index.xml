@@ -1,44 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tw's blog</title><link>https://Utaewook.github.io/blog/</link><description>Recent content on tw's blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sun, 14 Dec 2025 15:55:36 +0900</lastBuildDate><atom:link href="https://Utaewook.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://Utaewook.github.io/blog/page/about/</link><pubDate>Sun, 14 Dec 2025 15:55:36 +0900</pubDate><guid>https://Utaewook.github.io/blog/page/about/</guid><description>&lt;h1 id="focus"&gt;Focus
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;관심 분야 작성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="role"&gt;Role
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;업무 및 직무, 프로젝트에서의 역할 작성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="project"&gt;Project
-&lt;/h1&gt;&lt;h2 id="프로젝트-1"&gt;프로젝트 1
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;프로젝트 설명(2~4줄 정도로 간단히)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="프로젝트-2"&gt;프로젝트 2
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;프로젝트 설명(2~4줄 정도로 간단히)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="skill"&gt;Skill
-&lt;/h1&gt;&lt;p&gt;(주요 기술 : 숙련도 형태로 표현)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;python&lt;/li&gt;
-&lt;li&gt;docker&lt;/li&gt;
-&lt;li&gt;linux (Ubuntu)&lt;/li&gt;
-&lt;li&gt;git&lt;/li&gt;
-&lt;li&gt;OracleDB
-&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="experience"&gt;Experience
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;경력 및 경험사항 요약 (교육, 인턴, 현 직장)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="education"&gt;Education
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;전공, 학위, 연도&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="about"&gt;About
-&lt;/h1&gt;&lt;p&gt;(일하는 방식, 문제를 바라보는 관점, 주제들에 대한 생각 등 정리)&lt;/p&gt;
-&lt;h1 id="contact"&gt;Contact
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;email: &lt;a class="link" href="mailto:ddd050427@gmail.com" &gt;ddd050427@gmail.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>압축과 분할압축</title><link>https://Utaewook.github.io/blog/post/%EC%95%95%EC%B6%95%EA%B3%BC-%EB%B6%84%ED%95%A0%EC%95%95%EC%B6%95/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://Utaewook.github.io/blog/post/%EC%95%95%EC%B6%95%EA%B3%BC-%EB%B6%84%ED%95%A0%EC%95%95%EC%B6%95/</guid><description>&lt;h2 id="-tar-vs-gzip-정리"&gt;📦 tar vs gzip 정리
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dev on tw's blog</title><link>https://Utaewook.github.io/blog/categories/dev/</link><description>Recent content in Dev on tw's blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Utaewook.github.io/blog/categories/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>압축과 분할압축</title><link>https://Utaewook.github.io/blog/post/%EC%95%95%EC%B6%95%EA%B3%BC-%EB%B6%84%ED%95%A0%EC%95%95%EC%B6%95/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://Utaewook.github.io/blog/post/%EC%95%95%EC%B6%95%EA%B3%BC-%EB%B6%84%ED%95%A0%EC%95%95%EC%B6%95/</guid><description>&lt;h2 id="-tar-vs-gzip-정리"&gt;📦 tar vs gzip 정리
 &lt;/h2&gt;&lt;h3 id="1-tar과-gzip의-차이점"&gt;1. &lt;code&gt;tar&lt;/code&gt;과 &lt;code&gt;gzip&lt;/code&gt;의 차이점
 &lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -200,4 +160,4 @@
 &lt;td&gt;압축 결과를 표준 출력으로 보냄 (파이프 처리용) -&amp;gt; 기존 출력물을 유지하고 새로운 파일을 만들기 위해서 사용&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</description></item><item><title>Hello</title><link>https://Utaewook.github.io/blog/post/hello/</link><pubDate>Sat, 13 Dec 2025 19:38:29 +0900</pubDate><guid>https://Utaewook.github.io/blog/post/hello/</guid><description>&lt;p&gt;Contents&lt;/p&gt;</description></item></channel></rss>
+&lt;/table&gt;</description></item></channel></rss>
