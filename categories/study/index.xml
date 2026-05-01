@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tw's blog</title><link>https://Utaewook.github.io/blog/</link><description>Recent content on tw's blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Utaewook.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>HTTP-웹의 작동 원리와 클라이언트-서버 아키텍처</title><link>https://Utaewook.github.io/blog/post/http-%EC%9B%B9%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EC%99%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%84%9C%EB%B2%84-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link><pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate><guid>https://Utaewook.github.io/blog/post/http-%EC%9B%B9%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EC%99%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%84%9C%EB%B2%84-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid><description>&lt;p&gt;백엔드 분야에 대한 과목이 학부 때 존재했지만, 이미 전공과목의 학점을 다 들었다는 이유로 수강하지 않았었고, 네트워크 이론 등 여러 중요 CS 과목들도 기억에서 희미해져 가기 때문에,,, 독학을 통해 백엔드 분야의 이론과 실습을 학습해 보고 이를 기록해보려고 한다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Study on tw's blog</title><link>https://Utaewook.github.io/blog/categories/study/</link><description>Recent content in Study on tw's blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Utaewook.github.io/blog/categories/study/index.xml" rel="self" type="application/rss+xml"/><item><title>HTTP-웹의 작동 원리와 클라이언트-서버 아키텍처</title><link>https://Utaewook.github.io/blog/post/http-%EC%9B%B9%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EC%99%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%84%9C%EB%B2%84-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link><pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate><guid>https://Utaewook.github.io/blog/post/http-%EC%9B%B9%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EC%99%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%84%9C%EB%B2%84-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid><description>&lt;p&gt;백엔드 분야에 대한 과목이 학부 때 존재했지만, 이미 전공과목의 학점을 다 들었다는 이유로 수강하지 않았었고, 네트워크 이론 등 여러 중요 CS 과목들도 기억에서 희미해져 가기 때문에,,, 독학을 통해 백엔드 분야의 이론과 실습을 학습해 보고 이를 기록해보려고 한다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;백엔드라는 분야는 웹페이지가 생기고 발전해 오면서 함께 방대해진 분야이다. 또, 백엔드는 프론트엔드와 반대되는 느낌의 분야라고 느껴진다. 웹 애플리케이션, 모바일 애플리케이션 등의 응용 프로그램에서 서버, 데이터 베이스를 관리하고 데이터를 주고받는 기술이라고 이해할 수 있다. 프론트엔드는 사용자와 상호작용하는 프로그램의 앞부분을 만들고, 백엔드는 상호작용을 통해 생성되는 데이터나 동작들을 서버에 전달하고 데이터베이스에 기록하는 등의 여러 눈에 보이지 않는 부분을 만든다고 생각하면 될 듯하다.&lt;/p&gt;
 &lt;p&gt;백엔드 분야를 잘 이해하기 위해서는 웹이 어떻게 동작하고, 동작을 담당하고 구성하는 요소들이 어떤 게 있는지 잘 알아야 할 필요가 있다. 그래서 웹에 대한 부분과 HTTP 기초 이론들을 시작으로 백엔드 학습을 시작하려 한다.&lt;/p&gt;
@@ -226,24 +226,4 @@ loading="lazy"
 &lt;hr&gt;
 &lt;p&gt;HTTP의 메소드와 상태 코드를 이해하는 것은 서버와 클라이언트가 어떻게 요청을 응답하고 처리했는지에 대한 이해를 돕는다. 이를 통해 클라이언트의 요청이 성공적으로 처리되었는지, 문제가 발생했다면 그 원인이 무엇인지를 파악할 수 있다!&lt;/p&gt;
 &lt;p&gt;출처: &lt;a class="link" href="https://developer.mozilla.org/ko/docs/Web/HTTP/Status" target="_blank" rel="noopener"
-&gt;https://developer.mozilla.org/ko/docs/Web/HTTP/Status&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://Utaewook.github.io/blog/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utaewook.github.io/blog/page/about/</guid><description>&lt;p&gt;+++
-title = &amp;ldquo;About Me&amp;rdquo;
-description = &amp;ldquo;이곳에 이력정보나 프로젝트 소개를 적어주세요.&amp;rdquo;
-date = 2026-04-05
-layout = &amp;ldquo;about&amp;rdquo;&lt;/p&gt;
-&lt;h1 id="menu--main--스크립트에서-자동-주입하지만-수동-설정-시-우선됨"&gt;menu = &amp;ldquo;main&amp;rdquo; # 스크립트에서 자동 주입하지만 수동 설정 시 우선됨
-&lt;/h1&gt;&lt;h1 id="weight--1------정렬-순서"&gt;weight = 1 # 정렬 순서
-&lt;/h1&gt;&lt;p&gt;draft = false
-+++&lt;/p&gt;
-&lt;h1 id="안녕하세요-"&gt;안녕하세요! 👋
-&lt;/h1&gt;&lt;p&gt;여기에 본인의 프로필이나 블로그 소개를 작성해 보세요.&lt;/p&gt;
-&lt;h2 id="-프로젝트"&gt;🚀 프로젝트
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;프로젝트 A: 상세 설명&amp;hellip;&lt;/li&gt;
-&lt;li&gt;프로젝트 B: 상세 설명&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-이력"&gt;💼 이력
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;202X - 현재: OOO 근무&lt;/li&gt;
-&lt;li&gt;201X - 202X: OOO 졸업&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&gt;https://developer.mozilla.org/ko/docs/Web/HTTP/Status&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
