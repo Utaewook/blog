@@ -10,7 +10,7 @@
 &lt;p&gt;Self Attention은 &lt;strong&gt;&amp;ldquo;입력된 모든 단어를 동시에 한 번에 보면서 각 단어들 사이의 연관성을 계산&amp;rdquo;&lt;/strong&gt; 하기 때문에 위 문제들을 효과적으로 해결&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="2-핵심-원리-q-k-v-query-key-value"&gt;2. 핵심 원리: Q, K, V (Query, Key, Value)
-&lt;/h2&gt;&lt;p&gt;Self Attention은 데이터베이스 검색 시스템과 유사한 &lt;strong&gt;Query, Key, Value&lt;/strong&gt; 개념을 사용한다. 해당 내용이 가장 핵심이지만, 처음 볼 때 이해하기가 어려운 부분이라. 각 입력 단어는 학습 가능한 가중치 행렬과 곱해져 세 가지 벡터를 생성한다.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Self Attention은 데이터베이스 검색 시스템과 유사한 &lt;strong&gt;Query, Key, Value&lt;/strong&gt; 개념을 사용한다. 해당 내용이 가장 핵심이지만, 처음 볼 때 이해하기가 어려운 부분이다. 각 입력 단어는 학습 가능한 가중치 행렬과 곱해져 세 가지 벡터를 생성한다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Query (Q - 질문):&lt;/strong&gt; 현재 처리 중인 단어가 &amp;ldquo;나는 지금 어떤 정보가 필요해?&amp;ldquo;라고 묻는 주체.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Key (K - 색인/태그):&lt;/strong&gt; 다른 모든 단어들이 &amp;ldquo;나는 이런 정보를 가지고 있어&amp;quot;라고 알려주는 기준값.&lt;/li&gt;
