@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="434" viewBox="0 0 760 434" role="img" aria-label="Level 0은 노트북에서 만든 모델 파일을 손으로 예측 서비스에 넘기고, Level 1은 운영 환경 안에 트리거, 자동화된 학습 파이프라인, 메타데이터 저장소, 모니터링이 생기며, Level 2는 그 앞에 소스 관리, CI, CD와 모델 레지스트리가 붙는다">
+<style>
+svg {
+  --surface: #ffffff; --surface-2: #f6f8f7;
+  --fg: #18211e; --muted: #5a6661; --line: #cdd5d1; --stroke: #3f4b46;
+  --accent: #0a7468; --accent-tint: #d9efeb; --on-accent: #ffffff;
+  --warn: #c2410c; --warn-tint: #fbe2d4;
+  --a-tint: #e2eaf8; --a-stroke: #4467ad;
+  --b-tint: #ebe5f6; --b-stroke: #6a54a6;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+ svg {
+  --surface: #171d1b; --surface-2: #1c2421;
+  --fg: #e2e9e6; --muted: #9aa6a1; --line: #33403b; --stroke: #b3beb9;
+  --accent: #3fc8b5; --accent-tint: #163632; --on-accent: #08201c;
+  --warn: #f2905f; --warn-tint: #3b2117;
+  --a-tint: #1b2840; --a-stroke: #86a6e2;
+  --b-tint: #261f3b; --b-stroke: #ae9ae8;
+ }
+}
+.bg { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.2; }
+.bx-soft { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1.2; }
+.bx-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1.2; }
+.bx-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.6; }
+.bx-warn { fill: var(--warn-tint); stroke: var(--warn); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.bx-dim { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.panel { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.zone { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; }
+.band-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1; }
+.band-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1; }
+.band-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.2; }
+.band-m { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.tint-a { fill: var(--a-tint); }
+.tint-b { fill: var(--b-tint); }
+.ln { fill: none; stroke: var(--stroke); stroke-width: 1.3; }
+.ln-m { fill: none; stroke: var(--muted); stroke-width: 1; }
+.ln-acc { fill: none; stroke: var(--accent); stroke-width: 2.2; }
+.ln-warn { fill: none; stroke: var(--warn); stroke-width: 1.6; stroke-dasharray: 5 4; }
+.ln-warn-s { fill: none; stroke: var(--warn); stroke-width: 2; }
+.dash { stroke-dasharray: 4 3; }
+.t { fill: var(--fg); font-size: 12px; }
+.t11 { fill: var(--fg); font-size: 11px; }
+.tb { fill: var(--fg); font-size: 12.5px; font-weight: 600; }
+.th { fill: var(--fg); font-size: 14px; font-weight: 700; }
+.ts { fill: var(--muted); font-size: 10.5px; }
+.ta { fill: var(--accent); font-size: 11px; font-weight: 600; }
+.tba { fill: var(--accent); font-size: 12px; font-weight: 700; }
+.tw { fill: var(--warn); font-size: 11px; font-weight: 600; }
+.ton { fill: var(--on-accent); font-size: 10.5px; font-weight: 700; }
+.tdim { fill: var(--muted); font-size: 11px; }
+.hl { fill: var(--accent); font-weight: 600; }
+.mono { font-family: Consolas, "D2Coding", Menlo, "Noto Sans Mono", monospace; }
+.mk { fill: var(--stroke); }
+.mk-acc { fill: var(--accent); }
+.mk-warn { fill: var(--warn); }
+.dot-a { fill: var(--accent); }
+.dot-b { fill: var(--surface); stroke: var(--fg); stroke-width: 1.3; }
+.dot-flip { fill: var(--warn); }
+.dot-ghost { fill: none; stroke: var(--line); stroke-width: 1.2; }
+.dot-early { fill: var(--surface); stroke: var(--muted); stroke-width: 1.3; }
+.contour { fill: none; stroke: var(--line); stroke-width: 1; }
+.frame { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.wedge { fill: var(--warn-tint); }
+.pill-acc { fill: var(--accent); }
+.badge { fill: var(--accent); }
+.commit { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.5; }
+.commit-acc { fill: var(--accent); }
+.hdr { fill: var(--line); }
+.opt { fill: none; stroke: var(--fg); stroke-width: 1.5; }
+</style>
+<rect class="bg" x="0.5" y="0.5" width="759" height="433" rx="10"/>
+<defs>
+<marker id="f22-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+<marker id="f22-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-acc"/></marker>
+</defs>
+<rect class="bx-acc" x="536" y="12" width="14" height="14" rx="3"/>
+<text class="ts" x="556" y="23">이전 레벨에서 새로 생긴 부분</text>
+<!-- Level 0 -->
+<text class="th" x="16" y="72">Level 0</text>
+<text class="ts" x="16" y="90">수동 프로세스</text>
+<rect class="bx-a" x="140" y="56" width="250" height="52" rx="6"/>
+<text class="tb" x="265" y="77" text-anchor="middle">노트북 · 스크립트</text>
+<text class="ts" x="265" y="95" text-anchor="middle">데이터 준비 → 학습 → 평가 (수동)</text>
+<path class="ln" d="M390,82 H418" marker-end="url(#f22-f)"/>
+<rect class="bx" x="420" y="64" width="96" height="36" rx="6"/>
+<text class="t" x="468" y="86" text-anchor="middle">모델 파일</text>
+<path class="ln dash" d="M516,82 H600" marker-end="url(#f22-f)"/>
+<text class="ts" x="558" y="74" text-anchor="middle">손으로 전달</text>
+<rect class="bx-b" x="602" y="60" width="130" height="44" rx="6"/>
+<text class="t" x="667" y="86" text-anchor="middle">예측 서비스</text>
+<line class="ln-m" x1="16" y1="126" x2="744" y2="126"/>
+<!-- Level 1 -->
+<text class="th" x="16" y="198">Level 1</text>
+<text class="ts" x="16" y="216">ML 파이프라인</text>
+<text class="ts" x="16" y="230">자동화</text>
+<rect class="zone" x="130" y="144" width="612" height="142" rx="8"/>
+<text class="ts" x="736" y="160" text-anchor="end">운영 환경</text>
+<rect class="bx-acc" x="146" y="166" width="74" height="24" rx="5"/>
+<text class="t" x="183" y="182" text-anchor="middle">트리거</text>
+<path class="ln-acc" d="M183,190 V200" marker-end="url(#f22-a)"/>
+<rect class="bx-acc" x="146" y="202" width="340" height="50" rx="8"/>
+<rect class="bx" x="156" y="214" width="80" height="26" rx="5"/><text class="t11" x="196" y="231" text-anchor="middle">데이터 검증</text>
+<rect class="bx" x="250" y="214" width="56" height="26" rx="5"/><text class="t11" x="278" y="231" text-anchor="middle">학습</text>
+<rect class="bx" x="320" y="214" width="56" height="26" rx="5"/><text class="t11" x="348" y="231" text-anchor="middle">평가</text>
+<rect class="bx" x="390" y="214" width="86" height="26" rx="5"/><text class="t11" x="433" y="231" text-anchor="middle">모델 검증</text>
+<path class="ln" d="M236,227 H248" marker-end="url(#f22-f)"/>
+<path class="ln" d="M306,227 H318" marker-end="url(#f22-f)"/>
+<path class="ln" d="M376,227 H388" marker-end="url(#f22-f)"/>
+<text class="ta" x="146" y="270">자동화된 학습 파이프라인 (CT)</text>
+<line class="ln-m dash" x1="408" y1="252" x2="408" y2="260"/>
+<rect class="bx-acc" x="340" y="260" width="136" height="22" rx="5"/>
+<text class="t11" x="408" y="275" text-anchor="middle">메타데이터 저장소</text>
+<path class="ln" d="M486,227 H518" marker-end="url(#f22-f)"/>
+<rect class="bx-b" x="520" y="206" width="100" height="42" rx="6"/>
+<text class="t" x="570" y="231" text-anchor="middle">예측 서비스</text>
+<path class="ln" d="M620,227 H638" marker-end="url(#f22-f)"/>
+<rect class="bx-acc" x="640" y="206" width="92" height="42" rx="6"/>
+<text class="t" x="686" y="231" text-anchor="middle">모니터링</text>
+<path class="ln-acc" d="M686,206 V178 H222" marker-end="url(#f22-a)"/>
+<text class="ta" x="454" y="172" text-anchor="middle">성능 저하 · 새 데이터 → 재학습</text>
+<line class="ln-m" x1="16" y1="302" x2="744" y2="302"/>
+<!-- Level 2 -->
+<text class="th" x="16" y="374">Level 2</text>
+<text class="ts" x="16" y="392">CI/CD 파이프라인</text>
+<text class="ts" x="16" y="406">자동화</text>
+<rect class="bx-acc" x="140" y="360" width="84" height="42" rx="6"/>
+<text class="t" x="182" y="385" text-anchor="middle">소스 관리</text>
+<rect class="bx-acc" x="244" y="360" width="96" height="42" rx="6"/>
+<text class="tb" x="292" y="377" text-anchor="middle">CI</text>
+<text class="ts" x="292" y="394" text-anchor="middle">빌드 · 테스트</text>
+<rect class="bx-acc" x="360" y="360" width="104" height="42" rx="6"/>
+<text class="tb" x="412" y="377" text-anchor="middle">CD</text>
+<text class="ts" x="412" y="394" text-anchor="middle">파이프라인 배포</text>
+<path class="ln" d="M224,381 H242" marker-end="url(#f22-f)"/>
+<path class="ln" d="M340,381 H358" marker-end="url(#f22-f)"/>
+<path class="ln" d="M464,381 H497" marker-end="url(#f22-f)"/>
+<rect class="zone" x="488" y="326" width="254" height="92" rx="8"/>
+<text class="ts" x="736" y="342" text-anchor="end">운영 환경</text>
+<rect class="bx" x="500" y="360" width="72" height="42" rx="6"/>
+<text class="t" x="536" y="385" text-anchor="middle">파이프라인</text>
+<rect class="bx-acc" x="590" y="360" width="74" height="42" rx="6"/>
+<text class="t" x="627" y="377" text-anchor="middle">모델</text>
+<text class="t" x="627" y="393" text-anchor="middle">레지스트리</text>
+<rect class="bx-b" x="680" y="360" width="54" height="42" rx="6"/>
+<text class="t11" x="707" y="377" text-anchor="middle">예측</text>
+<text class="t11" x="707" y="393" text-anchor="middle">서비스</text>
+<path class="ln" d="M572,381 H588" marker-end="url(#f22-f)"/>
+<path class="ln" d="M664,381 H678" marker-end="url(#f22-f)"/>
+</svg>
