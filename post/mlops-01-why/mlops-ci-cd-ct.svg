@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" role="img" aria-label="DevOps는 코드 변경, CI, CD로 끝나고, MLOps는 여기에 데이터와 모델 검증, CT, 모니터링이 붙고 모니터링에서 CT로 되돌아가는 고리가 생긴다">
+<style>
+svg {
+  --surface: #ffffff; --surface-2: #f6f8f7;
+  --fg: #18211e; --muted: #5a6661; --line: #cdd5d1; --stroke: #3f4b46;
+  --accent: #0a7468; --accent-tint: #d9efeb; --on-accent: #ffffff;
+  --warn: #c2410c; --warn-tint: #fbe2d4;
+  --a-tint: #e2eaf8; --a-stroke: #4467ad;
+  --b-tint: #ebe5f6; --b-stroke: #6a54a6;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+ svg {
+  --surface: #171d1b; --surface-2: #1c2421;
+  --fg: #e2e9e6; --muted: #9aa6a1; --line: #33403b; --stroke: #b3beb9;
+  --accent: #3fc8b5; --accent-tint: #163632; --on-accent: #08201c;
+  --warn: #f2905f; --warn-tint: #3b2117;
+  --a-tint: #1b2840; --a-stroke: #86a6e2;
+  --b-tint: #261f3b; --b-stroke: #ae9ae8;
+ }
+}
+.bg { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.2; }
+.bx-soft { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1.2; }
+.bx-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1.2; }
+.bx-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.6; }
+.bx-warn { fill: var(--warn-tint); stroke: var(--warn); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.bx-dim { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.panel { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.zone { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; }
+.band-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1; }
+.band-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1; }
+.band-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.2; }
+.band-m { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.tint-a { fill: var(--a-tint); }
+.tint-b { fill: var(--b-tint); }
+.ln { fill: none; stroke: var(--stroke); stroke-width: 1.3; }
+.ln-m { fill: none; stroke: var(--muted); stroke-width: 1; }
+.ln-acc { fill: none; stroke: var(--accent); stroke-width: 2.2; }
+.ln-warn { fill: none; stroke: var(--warn); stroke-width: 1.6; stroke-dasharray: 5 4; }
+.ln-warn-s { fill: none; stroke: var(--warn); stroke-width: 2; }
+.dash { stroke-dasharray: 4 3; }
+.t { fill: var(--fg); font-size: 12px; }
+.t11 { fill: var(--fg); font-size: 11px; }
+.tb { fill: var(--fg); font-size: 12.5px; font-weight: 600; }
+.th { fill: var(--fg); font-size: 14px; font-weight: 700; }
+.ts { fill: var(--muted); font-size: 10.5px; }
+.ta { fill: var(--accent); font-size: 11px; font-weight: 600; }
+.tba { fill: var(--accent); font-size: 12px; font-weight: 700; }
+.tw { fill: var(--warn); font-size: 11px; font-weight: 600; }
+.ton { fill: var(--on-accent); font-size: 10.5px; font-weight: 700; }
+.tdim { fill: var(--muted); font-size: 11px; }
+.hl { fill: var(--accent); font-weight: 600; }
+.mono { font-family: Consolas, "D2Coding", Menlo, "Noto Sans Mono", monospace; }
+.mk { fill: var(--stroke); }
+.mk-acc { fill: var(--accent); }
+.mk-warn { fill: var(--warn); }
+.dot-a { fill: var(--accent); }
+.dot-b { fill: var(--surface); stroke: var(--fg); stroke-width: 1.3; }
+.dot-flip { fill: var(--warn); }
+.dot-ghost { fill: none; stroke: var(--line); stroke-width: 1.2; }
+.dot-early { fill: var(--surface); stroke: var(--muted); stroke-width: 1.3; }
+.contour { fill: none; stroke: var(--line); stroke-width: 1; }
+.frame { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.wedge { fill: var(--warn-tint); }
+.pill-acc { fill: var(--accent); }
+.badge { fill: var(--accent); }
+.commit { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.5; }
+.commit-acc { fill: var(--accent); }
+.hdr { fill: var(--line); }
+.opt { fill: none; stroke: var(--fg); stroke-width: 1.5; }
+</style>
+<rect class="bg" x="0.5" y="0.5" width="759" height="249" rx="10"/>
+<defs>
+<marker id="f12-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+<marker id="f12-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-acc"/></marker>
+</defs>
+<rect class="bx-acc" x="556" y="14" width="14" height="14" rx="3"/>
+<text class="ts" x="576" y="25">MLOps에서 더해진 부분</text>
+<text class="th" x="20" y="67">DevOps</text>
+<rect class="bx" x="96" y="40" width="110" height="44" rx="6"/>
+<text class="t" x="151" y="66" text-anchor="middle">코드 변경</text>
+<rect class="bx" x="228" y="40" width="146" height="44" rx="6"/>
+<text class="tb" x="301" y="58" text-anchor="middle">CI</text>
+<text class="ts" x="301" y="75" text-anchor="middle">코드 테스트</text>
+<rect class="bx" x="396" y="40" width="124" height="44" rx="6"/>
+<text class="tb" x="458" y="58" text-anchor="middle">CD</text>
+<text class="ts" x="458" y="75" text-anchor="middle">서비스 배포</text>
+<path class="ln" d="M206,62 H226" marker-end="url(#f12-f)"/>
+<path class="ln" d="M374,62 H394" marker-end="url(#f12-f)"/>
+<line class="ln-m dash" x1="20" y1="112" x2="740" y2="112"/>
+<text class="th" x="20" y="170">MLOps</text>
+<rect class="bx" x="96" y="140" width="110" height="50" rx="6"/>
+<text class="tb" x="151" y="161" text-anchor="middle">코드 · 데이터</text>
+<text class="ts" x="151" y="178" text-anchor="middle">변경</text>
+<rect class="bx" x="228" y="140" width="146" height="50" rx="6"/>
+<text class="tb" x="301" y="161" text-anchor="middle">CI</text>
+<text class="ts" x="301" y="178" text-anchor="middle">코드 + <tspan class="hl">데이터 · 모델 검증</tspan></text>
+<rect class="bx" x="396" y="140" width="124" height="50" rx="6"/>
+<text class="tb" x="458" y="161" text-anchor="middle">CD</text>
+<text class="ts" x="458" y="178" text-anchor="middle"><tspan class="hl">학습 파이프라인</tspan> 배포</text>
+<rect class="bx-acc" x="542" y="140" width="108" height="50" rx="6"/>
+<text class="tb" x="596" y="161" text-anchor="middle">CT</text>
+<text class="ts" x="596" y="178" text-anchor="middle">재학습 → 모델 배포</text>
+<rect class="bx-acc" x="672" y="140" width="76" height="50" rx="6"/>
+<text class="t" x="710" y="169" text-anchor="middle">모니터링</text>
+<path class="ln" d="M206,165 H226" marker-end="url(#f12-f)"/>
+<path class="ln" d="M374,165 H394" marker-end="url(#f12-f)"/>
+<path class="ln" d="M520,165 H540" marker-end="url(#f12-f)"/>
+<path class="ln" d="M650,165 H670" marker-end="url(#f12-f)"/>
+<path class="ln-acc" d="M710,190 V222 H596 V193" marker-end="url(#f12-a)"/>
+<text class="ta" x="653" y="240" text-anchor="middle">성능 저하 감지 시 재학습</text>
+</svg>
