@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="276" viewBox="0 0 760 276" role="img" aria-label="변환 전에는 피처 그룹별 SVM 11개가 각자 점수를 낸다. 커스텀 컨버터로 변환한 뒤에는 입력 1개를 그래프 안에서 분기해 SVM 11개에 나눠 주고 결과를 결합해 출력 1개로 내는 ONNX 그래프 하나가 된다">
+<style>
+svg {
+  --surface: #ffffff; --surface-2: #f6f8f7;
+  --fg: #18211e; --muted: #5a6661; --line: #cdd5d1; --stroke: #3f4b46;
+  --accent: #0a7468; --accent-tint: #d9efeb; --on-accent: #ffffff;
+  --warn: #c2410c; --warn-tint: #fbe2d4;
+  --a-tint: #e2eaf8; --a-stroke: #4467ad;
+  --b-tint: #ebe5f6; --b-stroke: #6a54a6;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+ svg {
+  --surface: #171d1b; --surface-2: #1c2421;
+  --fg: #e2e9e6; --muted: #9aa6a1; --line: #33403b; --stroke: #b3beb9;
+  --accent: #3fc8b5; --accent-tint: #163632; --on-accent: #08201c;
+  --warn: #f2905f; --warn-tint: #3b2117;
+  --a-tint: #1b2840; --a-stroke: #86a6e2;
+  --b-tint: #261f3b; --b-stroke: #ae9ae8;
+ }
+}
+.bg { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.2; }
+.bx-soft { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1.2; }
+.bx-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1.2; }
+.bx-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.6; }
+.bx-warn { fill: var(--warn-tint); stroke: var(--warn); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.bx-dim { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.panel { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.zone { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; }
+.band-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1; }
+.band-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1; }
+.band-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.2; }
+.band-m { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.tint-a { fill: var(--a-tint); }
+.tint-b { fill: var(--b-tint); }
+.ln { fill: none; stroke: var(--stroke); stroke-width: 1.3; }
+.ln-m { fill: none; stroke: var(--muted); stroke-width: 1; }
+.ln-acc { fill: none; stroke: var(--accent); stroke-width: 2.2; }
+.ln-warn { fill: none; stroke: var(--warn); stroke-width: 1.6; stroke-dasharray: 5 4; }
+.ln-warn-s { fill: none; stroke: var(--warn); stroke-width: 2; }
+.dash { stroke-dasharray: 4 3; }
+.t { fill: var(--fg); font-size: 12px; }
+.t11 { fill: var(--fg); font-size: 11px; }
+.tb { fill: var(--fg); font-size: 12.5px; font-weight: 600; }
+.th { fill: var(--fg); font-size: 14px; font-weight: 700; }
+.ts { fill: var(--muted); font-size: 10.5px; }
+.ta { fill: var(--accent); font-size: 11px; font-weight: 600; }
+.tba { fill: var(--accent); font-size: 12px; font-weight: 700; }
+.tw { fill: var(--warn); font-size: 11px; font-weight: 600; }
+.ton { fill: var(--on-accent); font-size: 10.5px; font-weight: 700; }
+.tdim { fill: var(--muted); font-size: 11px; }
+.hl { fill: var(--accent); font-weight: 600; }
+.mono { font-family: Consolas, "D2Coding", Menlo, "Noto Sans Mono", monospace; }
+.mk { fill: var(--stroke); }
+.mk-acc { fill: var(--accent); }
+.mk-warn { fill: var(--warn); }
+.dot-a { fill: var(--accent); }
+.dot-b { fill: var(--surface); stroke: var(--fg); stroke-width: 1.3; }
+.dot-flip { fill: var(--warn); }
+.dot-ghost { fill: none; stroke: var(--line); stroke-width: 1.2; }
+.dot-early { fill: var(--surface); stroke: var(--muted); stroke-width: 1.3; }
+.contour { fill: none; stroke: var(--line); stroke-width: 1; }
+.frame { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.wedge { fill: var(--warn-tint); }
+.pill-acc { fill: var(--accent); }
+.badge { fill: var(--accent); }
+.commit { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.5; }
+.commit-acc { fill: var(--accent); }
+.hdr { fill: var(--line); }
+.opt { fill: none; stroke: var(--fg); stroke-width: 1.5; }
+
+.grid { stroke: var(--line); stroke-width: 1; }
+.axis { stroke: var(--muted); stroke-width: 1; }
+.series { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; }
+.pt { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.ref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 3; }
+.out-zone { fill: var(--warn-tint); }
+.med { stroke: var(--stroke); stroke-width: 2; }
+.ln-w { fill: none; stroke: var(--warn); stroke-width: 2; }
+</style>
+<rect class="bg" x="0.5" y="0.5" width="759" height="275" rx="10"/>
+<defs>
+<marker id="a3-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+<marker id="a3-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-acc"/></marker>
+<marker id="a3-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-warn"/></marker>
+</defs>
+<text class="th" x="20" y="32" text-anchor="start">변환 전</text>
+<text class="th" x="400" y="32" text-anchor="start">변환 후</text>
+<rect class="bx-soft" x="20" y="63" width="96" height="30" rx="6"/>
+<text class="t11" x="68.0" y="82.0" text-anchor="middle">피처 그룹 1</text>
+<path class="ln" d="M116,78 H139" marker-end="url(#a3-f)"/>
+<rect class="bx" x="140" y="63" width="80" height="30" rx="6"/>
+<text class="t" x="180.0" y="82.0" text-anchor="middle">SVM 1</text>
+<path class="ln" d="M220,78 H243" marker-end="url(#a3-f)"/>
+<text class="t11" x="248" y="82" text-anchor="start">점수 1</text>
+<rect class="bx-soft" x="20" y="103" width="96" height="30" rx="6"/>
+<text class="t11" x="68.0" y="122.0" text-anchor="middle">피처 그룹 2</text>
+<path class="ln" d="M116,118 H139" marker-end="url(#a3-f)"/>
+<rect class="bx" x="140" y="103" width="80" height="30" rx="6"/>
+<text class="t" x="180.0" y="122.0" text-anchor="middle">SVM 2</text>
+<path class="ln" d="M220,118 H243" marker-end="url(#a3-f)"/>
+<text class="t11" x="248" y="122" text-anchor="start">점수 2</text>
+<circle class="mk" cx="68" cy="152" r="1.6"/>
+<circle class="mk" cx="68" cy="158" r="1.6"/>
+<circle class="mk" cx="68" cy="164" r="1.6"/>
+<circle class="mk" cx="180" cy="152" r="1.6"/>
+<circle class="mk" cx="180" cy="158" r="1.6"/>
+<circle class="mk" cx="180" cy="164" r="1.6"/>
+<circle class="mk" cx="266" cy="152" r="1.6"/>
+<circle class="mk" cx="266" cy="158" r="1.6"/>
+<circle class="mk" cx="266" cy="164" r="1.6"/>
+<rect class="bx-soft" x="20" y="183" width="96" height="30" rx="6"/>
+<text class="t11" x="68.0" y="202.0" text-anchor="middle">피처 그룹 11</text>
+<path class="ln" d="M116,198 H139" marker-end="url(#a3-f)"/>
+<rect class="bx" x="140" y="183" width="80" height="30" rx="6"/>
+<text class="t" x="180.0" y="202.0" text-anchor="middle">SVM 11</text>
+<path class="ln" d="M220,198 H243" marker-end="url(#a3-f)"/>
+<text class="t11" x="248" y="202" text-anchor="start">점수 11</text>
+<text class="ts" x="352" y="124" text-anchor="middle">커스텀</text>
+<text class="ts" x="352" y="138" text-anchor="middle">컨버터</text>
+<path class="ln-acc" d="M322,150 H383" marker-end="url(#a3-a)"/>
+<rect class="bx-acc" x="392" y="46" width="352" height="212" rx="8"/>
+<text class="tb" x="406" y="68" text-anchor="start">ONNX 그래프</text>
+<rect class="bx" x="404" y="132" width="50" height="40" rx="6"/>
+<text class="t" x="429.0" y="156.0" text-anchor="middle">입력</text>
+<path class="ln" d="M454,152 H469" marker-end="url(#a3-f)"/>
+<rect class="bx" x="470" y="132" width="46" height="40" rx="6"/>
+<text class="t" x="493.0" y="156.0" text-anchor="middle">분기</text>
+<rect class="bx" x="540" y="87" width="70" height="26" rx="5"/>
+<text class="t11" x="575" y="104.5" text-anchor="middle">SVM 1</text>
+<path class="ln" d="M516,152 L539,100" marker-end="url(#a3-f)"/>
+<path class="ln" d="M610,100 L633,152" marker-end="url(#a3-f)"/>
+<rect class="bx" x="540" y="121" width="70" height="26" rx="5"/>
+<text class="t11" x="575" y="138.5" text-anchor="middle">SVM 2</text>
+<path class="ln" d="M516,152 L539,134" marker-end="url(#a3-f)"/>
+<path class="ln" d="M610,134 L633,152" marker-end="url(#a3-f)"/>
+<circle class="mk" cx="575" cy="162" r="1.6"/>
+<circle class="mk" cx="575" cy="168" r="1.6"/>
+<circle class="mk" cx="575" cy="174" r="1.6"/>
+<rect class="bx" x="540" y="189" width="70" height="26" rx="5"/>
+<text class="t11" x="575" y="206.5" text-anchor="middle">SVM 11</text>
+<path class="ln" d="M516,152 L539,202" marker-end="url(#a3-f)"/>
+<path class="ln" d="M610,202 L633,152" marker-end="url(#a3-f)"/>
+<rect class="bx" x="634" y="132" width="46" height="40" rx="6"/>
+<text class="t" x="657.0" y="156.0" text-anchor="middle">결합</text>
+<path class="ln" d="M680,152 H695" marker-end="url(#a3-f)"/>
+<rect class="bx" x="696" y="132" width="40" height="40" rx="6"/>
+<text class="t" x="716.0" y="156.0" text-anchor="middle">출력</text>
+</svg>

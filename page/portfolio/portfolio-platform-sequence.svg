@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="282" viewBox="0 0 760 282" role="img" aria-label="수정 전에는 job-ready 이벤트가 먼저 나가 전처리가 60~130ms 뒤 저장소를 조회했을 때 데이터가 없었고, 기록은 그 뒤에 끝나 체인이 멈췄다. 수정 후에는 기록이 끝난 다음 자기 큐의 합성 이벤트로 job-ready를 내보내 조회가 항상 데이터를 찾는다">
+<style>
+svg {
+  --surface: #ffffff; --surface-2: #f6f8f7;
+  --fg: #18211e; --muted: #5a6661; --line: #cdd5d1; --stroke: #3f4b46;
+  --accent: #0a7468; --accent-tint: #d9efeb; --on-accent: #ffffff;
+  --warn: #c2410c; --warn-tint: #fbe2d4;
+  --a-tint: #e2eaf8; --a-stroke: #4467ad;
+  --b-tint: #ebe5f6; --b-stroke: #6a54a6;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+ svg {
+  --surface: #171d1b; --surface-2: #1c2421;
+  --fg: #e2e9e6; --muted: #9aa6a1; --line: #33403b; --stroke: #b3beb9;
+  --accent: #3fc8b5; --accent-tint: #163632; --on-accent: #08201c;
+  --warn: #f2905f; --warn-tint: #3b2117;
+  --a-tint: #1b2840; --a-stroke: #86a6e2;
+  --b-tint: #261f3b; --b-stroke: #ae9ae8;
+ }
+}
+.bg { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.2; }
+.bx-soft { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.bx-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1.2; }
+.bx-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1.2; }
+.bx-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.6; }
+.bx-warn { fill: var(--warn-tint); stroke: var(--warn); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.bx-dim { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+.panel { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.zone { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; }
+.band-a { fill: var(--a-tint); stroke: var(--a-stroke); stroke-width: 1; }
+.band-b { fill: var(--b-tint); stroke: var(--b-stroke); stroke-width: 1; }
+.band-acc { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 1.2; }
+.band-m { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.tint-a { fill: var(--a-tint); }
+.tint-b { fill: var(--b-tint); }
+.ln { fill: none; stroke: var(--stroke); stroke-width: 1.3; }
+.ln-m { fill: none; stroke: var(--muted); stroke-width: 1; }
+.ln-acc { fill: none; stroke: var(--accent); stroke-width: 2.2; }
+.ln-warn { fill: none; stroke: var(--warn); stroke-width: 1.6; stroke-dasharray: 5 4; }
+.ln-warn-s { fill: none; stroke: var(--warn); stroke-width: 2; }
+.dash { stroke-dasharray: 4 3; }
+.t { fill: var(--fg); font-size: 12px; }
+.t11 { fill: var(--fg); font-size: 11px; }
+.tb { fill: var(--fg); font-size: 12.5px; font-weight: 600; }
+.th { fill: var(--fg); font-size: 14px; font-weight: 700; }
+.ts { fill: var(--muted); font-size: 10.5px; }
+.ta { fill: var(--accent); font-size: 11px; font-weight: 600; }
+.tba { fill: var(--accent); font-size: 12px; font-weight: 700; }
+.tw { fill: var(--warn); font-size: 11px; font-weight: 600; }
+.ton { fill: var(--on-accent); font-size: 10.5px; font-weight: 700; }
+.tdim { fill: var(--muted); font-size: 11px; }
+.hl { fill: var(--accent); font-weight: 600; }
+.mono { font-family: Consolas, "D2Coding", Menlo, "Noto Sans Mono", monospace; }
+.mk { fill: var(--stroke); }
+.mk-acc { fill: var(--accent); }
+.mk-warn { fill: var(--warn); }
+.dot-a { fill: var(--accent); }
+.dot-b { fill: var(--surface); stroke: var(--fg); stroke-width: 1.3; }
+.dot-flip { fill: var(--warn); }
+.dot-ghost { fill: none; stroke: var(--line); stroke-width: 1.2; }
+.dot-early { fill: var(--surface); stroke: var(--muted); stroke-width: 1.3; }
+.contour { fill: none; stroke: var(--line); stroke-width: 1; }
+.frame { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+.wedge { fill: var(--warn-tint); }
+.pill-acc { fill: var(--accent); }
+.badge { fill: var(--accent); }
+.commit { fill: var(--surface); stroke: var(--stroke); stroke-width: 1.5; }
+.commit-acc { fill: var(--accent); }
+.hdr { fill: var(--line); }
+.opt { fill: none; stroke: var(--fg); stroke-width: 1.5; }
+
+.grid { stroke: var(--line); stroke-width: 1; }
+.axis { stroke: var(--muted); stroke-width: 1; }
+.series { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; }
+.pt { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.ref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 3; }
+.out-zone { fill: var(--warn-tint); }
+.med { stroke: var(--stroke); stroke-width: 2; }
+.ln-w { fill: none; stroke: var(--warn); stroke-width: 2; }
+</style>
+<rect class="bg" x="0.5" y="0.5" width="759" height="281" rx="10"/>
+<defs>
+<marker id="b1-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+<marker id="b1-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-acc"/></marker>
+<marker id="b1-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-warn"/></marker>
+</defs>
+<text class="th" x="20" y="30" text-anchor="start">수정 전</text>
+<text class="th" x="392" y="30" text-anchor="start">수정 후</text>
+<line class="ln-m dash" x1="376" y1="16" x2="376" y2="274"/>
+<line class="ln-m dash" x1="60" y1="72" x2="60" y2="248"/>
+<rect class="bx" x="20" y="44" width="80" height="28" rx="6"/>
+<text class="t" x="60.0" y="62.0" text-anchor="middle">job 큐</text>
+<line class="ln-m dash" x1="175" y1="72" x2="175" y2="248"/>
+<rect class="bx" x="135" y="44" width="80" height="28" rx="6"/>
+<text class="t" x="175.0" y="62.0" text-anchor="middle">저장소</text>
+<line class="ln-m dash" x1="290" y1="72" x2="290" y2="248"/>
+<rect class="bx" x="250" y="44" width="80" height="28" rx="6"/>
+<text class="t" x="290.0" y="62.0" text-anchor="middle">전처리</text>
+<path class="ln" d="M60,104 H289" marker-end="url(#b1-f)"/>
+<text class="t11 mono" x="232" y="98" text-anchor="middle">job-ready</text>
+<path class="ln" d="M290,140 H176" marker-end="url(#b1-f)"/>
+<text class="t11" x="232" y="134" text-anchor="middle">조회</text>
+<path class="ln-warn" d="M175,164 H289" marker-end="url(#b1-w)"/>
+<text class="tw" x="232" y="158" text-anchor="middle">없음</text>
+<path class="ln" d="M60,200 H174" marker-end="url(#b1-f)"/>
+<text class="t11" x="118" y="194" text-anchor="middle">기록</text>
+<path class="ln-m" d="M298,104 H304 V140 H298"/>
+<text class="ts" x="309" y="126" text-anchor="start">+60~130ms</text>
+<rect class="bx-warn" x="240" y="226" width="100" height="28" rx="6"/>
+<text class="tw" x="290.0" y="244.0" text-anchor="middle">체인 정지</text>
+<line class="ln-m dash" x1="432" y1="72" x2="432" y2="248"/>
+<rect class="bx" x="392" y="44" width="80" height="28" rx="6"/>
+<text class="t" x="432.0" y="62.0" text-anchor="middle">job 큐</text>
+<line class="ln-m dash" x1="547" y1="72" x2="547" y2="248"/>
+<rect class="bx" x="507" y="44" width="80" height="28" rx="6"/>
+<text class="t" x="547.0" y="62.0" text-anchor="middle">저장소</text>
+<line class="ln-m dash" x1="662" y1="72" x2="662" y2="248"/>
+<rect class="bx" x="622" y="44" width="80" height="28" rx="6"/>
+<text class="t" x="662.0" y="62.0" text-anchor="middle">전처리</text>
+<path class="ln" d="M432,104 H546" marker-end="url(#b1-f)"/>
+<text class="t11" x="490" y="98" text-anchor="middle">기록</text>
+<path class="ln-acc" d="M432,126 H460 V144 H433" marker-end="url(#b1-a)"/>
+<text class="ta" x="468" y="140" text-anchor="start">합성 이벤트</text>
+<path class="ln" d="M432,176 H661" marker-end="url(#b1-f)"/>
+<text class="t11 mono" x="604" y="170" text-anchor="middle">job-ready</text>
+<path class="ln" d="M662,204 H548" marker-end="url(#b1-f)"/>
+<text class="t11" x="604" y="198" text-anchor="middle">조회</text>
+<path class="ln-acc dash" d="M547,226 H661" marker-end="url(#b1-a)"/>
+<text class="ta" x="604" y="220" text-anchor="middle">있음</text>
+<rect class="bx-acc" x="612" y="240" width="100" height="28" rx="6"/>
+<text class="t" x="662.0" y="258.0" text-anchor="middle">다음 단계</text>
+</svg>
